@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #5CD2E6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    gap:30px;
+    
+}
+
+/* //buttons */
+.buttons{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+.btn{
+    padding:15px 25px;
+    background-color: #102C57;
+    color: #F8F0E5;
+    font-weight: 800;
+    width: 200px;
+    border-radius: 25px;
+}
+.btn:hover{
+    background-color:#FAF2D3;
+    color: #102C57;
+    font-weight: 800;
+}
+h1{
+    text-align: center;
+    padding:20px;
+}
+
+/* inputs */
+#inputField, .mergingInput{
+    height: 70px;
+    width: 200px;
+    background-color:#F4E869;
+    color: #102C57;
+    font-size: large;
+    font-weight: bolder;
+    padding:15px;
+    border-radius: 20px;
+}
+#inputField:focus
+{
+    background-color: white;
+    color:black;  
+}
+
+#twoInputsforReplace, #inputforMerge{
+    display: none;
+    text-align: center;
+}
+.inputField{
+    height: 40px;
+    width: 120px;
+    margin: 15px;
+    background-color:#F4E869;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/* contents */
+#content{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    font-size: 5rem;
+}
+
