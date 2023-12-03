@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#312f60;
+}
+.fL {
+    float:left;
+}
+.fR{
+    float:right;
+}
+
+.clear::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.leftContainer{
+    width:300px;
+    box-sizing: border-box;
+    padding:20px;
+    border-right: 2px solid #f2f1f4 ;
+}
+.logo{
+    padding-bottom:145px;
+}
+.logo strong{
+    text-align: center;
+    display: block;
+}
+.logo > img{
+    width:90;
+    box-sizing: border-box;
+    margin:0 auto 10px;
+    border-radius: 50%;
+    display: block;
+    border: 2px solid #a4a6ff;
+}
+
+.navbar, .iconList{
+    list-style-type: none;
+}
+.navbar li{
+    padding:20px;
+    text-align: center;
+}
+.navbar li a, .gotaProjectbtn{
+    text-decoration: none;
+    color:#656389;
+    border-radius:10px;
+}
+.navbar li a:hover{
+    color:#a4a6ff;
+}
+.iconList{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.iconList li{
+    display: inline-block;
+}
+.icon1{
+    background-image: url("images/facebook.png");
+    background-color: #f2f1f4;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 50%;   
+}
+.icon2{
+    background-image: url("images/twitter.png");
+    background-color: #f2f1f4;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 50%; 
+}
+.icon3{
+    background-image: url("images/linkedin.png");
+    background-repeat: no-repeat;
+    background-color: #f2f1f4;
+    background-position: center;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 50%;
+
+}
+.socialMedia div{
+    text-align: center;
+    padding-bottom:10px;
+}
+
+/* RIGHTCONTAINER */
+
+.rightContainer{
+    width: calc(100% - 300px);   
+}
+.content{
+    padding:80px;   
+}
+
+/* leftContent */
+
+.leftContent{
+    width: 260px;
+}
+h5{
+    color:#656389;
+}
+h2,h5{
+    padding-bottom: 10px;
+}
+.leftContent strong{
+    margin-bottom: 30px;
+    display: block;
+}
+.gotaProjectbtn{
+    background-color: #110f48;
+    height: 50px;
+    color:white;
+    text-align: center;
+    box-sizing: border-box;
+    padding:15px;
+    width: 180px;
+    display: block;   
+}
+
+/* rightContent */
+.rightContent{
+    color: #656389;
+    width: calc(100% - 410px);
+    
+}
+.rightContainer  b{
+    color:#ffb87c;
+}
+.rightContent > div{
+    margin-bottom: 30px;
+}
+.tables  tr  > th {
+    text-decoration: underline;
+    font-weight: normal;
+    padding-right:40px ;
+    text-align: left;
+    color: #656389;;
+ }
+
+.tables tr td {
+   padding-right: 40px;
+   font-weight: bold;
+}
+
+.infoBox{
+    display: flex;
+    justify-content: space-around;
+}
+.infoBox h6{
+    color:#615f85;
+    padding-top:10px;
+}
+
+.box1{
+    width:300px;
+    height:165px;
+    background-color: #d3f4ed;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+    
+}
+.box2{
+    width:300px;
+    height:165px;
+    background-color: #fce8d4;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.box3{
+    width:300px;
+    height:165px;
+    background-color: #e2f9df;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+} 
+     
