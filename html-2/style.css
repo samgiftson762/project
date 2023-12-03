@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{
+    font-family: 'Times New Roman', Times, serif;  
+}
+h1{
+    font-size: 300%;
+    font-weight: normal;
+    text-align: center;
+}
+P{
+    text-align: center;
+}
+.fL{
+    float:left;
+}
+.fR{
+    float: right;
+}
+.clear::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+.header{
+    background-image: url("images/resort.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    
+    
+}
+.menu{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    gap: 250px;
+    width:1000px;
+    margin:0 auto;
+   
+}
+.logo{
+    background-image: url("images/samlogo.png");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border-radius:50%;
+}
+.navBar{
+    list-style-type: none;
+    padding-top: 25px;
+}
+.navBar li{
+    display: block;
+}
+.navBar li a{
+    text-decoration: none;
+    color:white;
+    border-radius: 10px;
+    padding:15px;
+}
+.navBar li a:hover{
+    background-color:#f9a637 ;
+}
+.hotelName{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0,0.6);
+    height: auto;
+}
+.hotelName h1, .hotelName p {
+    text-align: center;
+    padding-bottom: 15px;
+    color:white;
+    
+}
+.aboutus{
+    padding:40px 0;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    
+}
+.aboutList  li{
+    position:relative ;
+    padding-left:25px;
+    list-style-type: none;
+
+}
+.aboutList li::after{
+    position: absolute;
+    left: 0;
+   
+    width:20px;
+    height: 20px;
+    content: '';
+    background: url('images/rightArrow.png') no-repeat left center;
+  
+}
+/* .aboutList li{
+    list-style-type: square;
+    list-style-image: url("images/rightArrow.png");
+} */
+.left{
+    width:400px;
+}
+.right{
+    width:600px;
+    color:#3c3c3c;
+    text-align:justify; 
+}
+.right p:first-of-type{
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.right p{
+    
+    text-align: center,justify;
+}
+.right h1,ul{
+    padding:10px 0;
+    color:#3c3c3c;
+    text-align:justify;
+}
+.facilities, .Comments{
+    background-color: #e9f4ff;
+    padding:10px;
+
+}
+.fontCentering{
+    text-align:center;
+    padding:10px;
+}
+
+.Container{
+    width:1200px;
+    margin: 0 auto;
+    padding:40px 0;   
+}
+.flex-box1,.flex-box2, .flex-box3, .flex-box4{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: center;  
+}
+.facilitiesImage img, .hotelImage img, .commenting{    
+    width:350px;
+    height:300px;
+}
+.box, .hotelImages{
+    width:350px;
+    height:auto;
+    text-align: center;
+    background-color:white ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+} 
+.boxbtn{
+    display: block;
+    padding:15px;
+    background-color: #f9a637;
+    width:150px;
+    margin:20px auto;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color:white;
+}
+.boxbtn:hover{
+    background-color: #ff9508;
+}
+.otherFacilities{
+    background-image: url("images/nature.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    position: relative;
+   isolation: isolate;
+   padding-bottom: 20px;
+}
+.flex-box2{
+    width: 800px;
+    justify-content: space-between;
+    margin:0 auto;
+    gap:70px;  
+}
+.facilitiesBox img{
+    width:100px;
+}
+.facilitiesBox{
+    text-align: center;
+    /* width:130px; */
+    margin:10px;
+}
+.otherFacilities::after{
+    content:'';
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+    background: black;
+    z-index: -1;
+}
+
+.commenting > p{
+    text-align:justify;
+    padding:10px 0;
+    font-size: small;
+    
+}
+.commenting{
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: #000306;
+}
+.rating{
+    width: 80px;
+    height: auto;
+    /* margin-left: 20px; */
+}
+.profile{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 40px;
+    box-sizing: border-box;
+    /* margin-left:15px ; */
+}
+.accountDetails h5{
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.accountDetails .name{
+    padding-top:15px;
+}
+.questions{
+    width:80%;
+    margin:0 auto;
+    border:1px solid #51849a;
+    margin-bottom: 20px;
+
+}
+
+.droppart{
+    background-color: #51849a;
+    padding:5px;
+    height: 40px;
+    font-weight: bold;
+    color:white;
+    padding:10px;  
+    
+}
+.anspart{
+    background-color: white;
+    padding:5px;
+    height: 40px;
+    box-sizing:border-box;
+    padding:10px;
+    color:black; 
+    margin:10px; 
+    
+}
+.planningTrip{
+    background-image: url("images/floatingdining.jpg");
+        background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    padding:20px;
+    isolation: isolate;
+}
+
+
+
+
+
+
+
