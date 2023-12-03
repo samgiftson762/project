@@ -25,6 +25,7 @@ h1{
     background-color: #FFFADD;
     border-radius: 5px;
     border: 1px solid #22668D ;
+    overflow:hidden;
    
 }
 .btn{
