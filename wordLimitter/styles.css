@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    background-color: #FF9B82;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    padding:20px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #57375D;
+    background-color: #FF3FA4;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+.hoverBox{
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: yellowgreen;
+    color:black;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% - -10px);
+    transform: translateX(-50%);
+}
+.hoverBox::after{
+    content: '';
+    display: block;
+    border-left:10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top:20px solid yellowgreen;
+    position: absolute;
+    bottom: -10px;
+    left:calc(50% - 10px)
+}
+.content::hover .isPrasent {
+    display:block;
+}
+
+.inputField{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    background-color: #FFC8C8;
+    color:#57375D;
+    border-radius:15px;
+    font-weight: bold;
+}
+.btn{
+    width: 80px;
+    height: 40px;
+    border-radius:15px;
+    font-weight: bold;
+    background-color: #FF3FA4;
+    color:#FFC8C8;
+}
+.btn:hover{
+    opacity: 80%;
+    background-color: #FFC8C8;
+    color:#FF3FA4;
+}
+::placeholder{
+    color:#57375D;
+    font-weight: bold;
+}
